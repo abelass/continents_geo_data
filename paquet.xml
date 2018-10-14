@@ -20,7 +20,9 @@
 	<auteur>Rainer Müller</auteur>
 
 	<licence>GNU/GPL</licence>
-
+	
+	<necessite nom="continents" compatibilite="[1.0.2;]" />
+	<necessite nom="cextras" compatibilite="[3.11.6;]" />
 	<!--
 		Exemple de commandes
 		* dependances
