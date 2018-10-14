@@ -1,2 +1,2 @@
 # continents_geo_data
-Ajoute des données géometriques au plugin continents
+Ajoute des donnés géométriques au plugin continents
