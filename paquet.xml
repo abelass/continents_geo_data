@@ -19,7 +19,7 @@
 	<!-- cette balise peut être présente plusieurs fois s'il y a plusieurs auteurs --> 
 	<auteur>Rainer Müller</auteur>
 
-	<licence>GNU/GPL</licence>
+	<licence>GNU/GPL v3</licence>
 	
 	<necessite nom="continents" compatibilite="[1.0.2;]" />
 	<necessite nom="cextras" compatibilite="[3.11.6;]" />
