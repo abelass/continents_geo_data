@@ -6,23 +6,23 @@
 	compatibilite="[3.0.0;3.2.*]"
 	logo="prive/themes/spip/images/continents_geo_data-64.png"
 	documentation="https://github.com/abelass/continents_geo_data"
-	schema="1.0.0" 
+	schema="1.0.0"
 >
 	<!--
 		Paquet généré le 2018-10-14 10:34:17
-		(Vous pouvez bien entendu supprimer ces commentaires) 
+		(Vous pouvez bien entendu supprimer ces commentaires)
 	-->
 
 	<nom>Donnés géométriques continents</nom>
 	<!-- Des donnés géométriques pour continents -->
 
-	<!-- cette balise peut être présente plusieurs fois s'il y a plusieurs auteurs --> 
+	<!-- cette balise peut être présente plusieurs fois s'il y a plusieurs auteurs -->
 	<auteur>Rainer Müller</auteur>
 
 	<licence>GNU/GPL v3</licence>
-	
+
 	<necessite nom="continents" compatibilite="[1.0.2;]" />
-	<necessite nom="cextras" compatibilite="[3.11.6;]" />
+	<necessite nom="gisgeom" compatibilite="[1.11.5;]" />
 	<!--
 		Exemple de commandes
 		* dependances
@@ -32,13 +32,13 @@
 		* pipelines
 		<pipeline nom="autoriser" inclure="continents_geo_data_autorisations.php" />
 		<pipeline nom="insert_head" inclure="continents_geo_data_pipelines.php" />
-		* declarer un pipeline 
+		* declarer un pipeline
 		<pipeline nom="mon_pipeline" action="" />
 		* parents de menus de SPIP :
 				menu_accueil (à éviter), menu_edition, menu_publication,
-				menu_activite, menu_squelette, menu_administration, menu_configuration 
+				menu_activite, menu_squelette, menu_administration, menu_configuration
 		<menu nom="continents_geo_data" titre="continents_geo_data:continents_geo_data_titre" parent="menu_edition"  icone="images/continents_geo_data-16.png" />
-		* parents d'onglets... configuration, plugins, statistiques, ... 
+		* parents d'onglets... configuration, plugins, statistiques, ...
 		<onglet nom="continents_geo_data" titre="continents_geo_data:continents_geo_data_titre" parent="configuration" icone="images/continents_geo_data-24.png" />
 	-->
 
