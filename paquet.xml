@@ -21,7 +21,7 @@
 
 	<licence>GNU/GPL v3</licence>
 
-	<necessite nom="continents" compatibilite="[1.0.2;]" />
+	<necessite nom="continents" compatibilite="[1.1.0;]" />
 	<necessite nom="gisgeom" compatibilite="[1.11.5;]" />
 	<!--
 		Exemple de commandes
