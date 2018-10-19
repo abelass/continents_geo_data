@@ -1,2 +1,4 @@
 /.project
 /.buildconfig
+/.buildpath
+/.settings*
