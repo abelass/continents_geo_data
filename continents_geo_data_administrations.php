@@ -42,6 +42,7 @@ function continents_geo_data_upgrade($nom_meta_base_version, $version_cible) {
 			'peupler_continents_geo'
 		),
 		array('sql_alter', 'TABLE spip_continents CHANGE COLUMN geo geo GEOMETRY NOT NULL'),
+		array('sql_alter', 'TABLE spip_gis ADD SPATIAL INDEX (geo)'),
 	);
 
 
