@@ -19,10 +19,9 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 function peupler_continents_geo() {
 	include_spip('gisgeom_fonctions');
 	$json = json_decode(file_get_contents(__DIR__ . '/../data/world_continents.json', TRUE), TRUE);
-	spip_log($json, 'teste');
+
 	//spip_log(__DIR__ . '/../data/world_continents.json', 'teste');
 	foreach($json['features'] AS $values) {
-		spip_log($values['properties'], 'teste');
 		$code_iso_a2 = $values['properties']['hc-a2'];
 		$wkt = json_to_wkt(json_encode($values['geometry']));
 		$wkt = sql_getfetsel("GeomFromText('$wkt')");
@@ -30,8 +29,7 @@ function peupler_continents_geo() {
 		$set = array(
 			'geo' => $wkt,
 		);
-		//spip_log($set, 'teste');
-		sql_updateq('spip_continents', $set, 'code_iso_a2 LIKE' . sql_quote($code_iso_a2));
 
+		sql_updateq('spip_continents', $set, 'code_iso_a2 LIKE' . sql_quote($code_iso_a2));
 	}
 }
