@@ -38,14 +38,14 @@ function continents_geo_data_upgrade($nom_meta_base_version, $version_cible) {
 		// cr´e la table
 		array(
 			'sql_alter',
-			'TABLE spip_continents ADD geo GEOMETRY AFTER longitude'
+			'TABLE spip_continents ADD geo GEOMETRY AFTER lon'
 		),
 		// Remplir la table avec les points
 		array(
 			'sql_update',
 			'spip_continents',
 			array(
-				'geo' => "GeomFromText(CONCAT('POINT(',longitude,' ',latitude,')'))"
+				'geo' => "GeomFromText(CONCAT('POINT(',lon,' ',lat,')'))"
 			)
 		),
 		// remplacer le points par polygons s'ils existent
