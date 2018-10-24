@@ -24,4 +24,8 @@
 	<necessite nom="continents" compatibilite="[1.1.2;]" />
 	<necessite nom="gisgeom" compatibilite="[1.11.5;]" />
 
+	<pipeline nom="pre_boucle" inclure="continents_geo_data_pipelines.php" />
+
+	<chemin path="squelettes" />
+	<chemin path="" />
 </paquet>

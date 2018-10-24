@@ -13,9 +13,16 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
-
-/*
- * Un fichier de pipelines permet de regrouper
- * les fonctions de branchement de votre plugin
- * sur des pipelines existants.
+/**
+ * Surcharger les boucles PAYS et celles qui comportent le critère gis
+ * pour permettre d'accéder à la valeur du champ geo au format WKT (voir balise #GEOMETRY_PAYS)
+ *
+ * @param $boucle
+ * @return mixed
  */
+function continents_geo_data_pre_boucle($boucle) {
+	if ($boucle->type_requete == 'continents' or in_array('continents', $boucle->jointures)) {
+		$boucle->select[]= 'AsText(continents.geo) AS geometry_continent';
+	}
+	return $boucle;
+}
