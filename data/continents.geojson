@@ -1,8 +1,13 @@
 {
 "type": "FeatureCollection",
 "name": "continents",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
 "features": [
-
+{ "type": "Feature", "properties": { "id": "EU", "hc-group": "admin0", "hc-middle-x": 0.65, "hc-middle-y": 0.64, "hc-key": "eu", "hc-a2": "EU", "abbrev-a3": "EUR", "iso-a2": "EU", "name": "Europe" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": "OC", "hc-group": "admin0", "hc-middle-x": 0.31, "hc-middle-y": 0.45, "hc-key": "oc", "hc-a2": "OC", "abbrev-a3": "OCA", "iso-a2": "OC", "name": "Oceania" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": "AF", "hc-group": "admin0", "hc-middle-x": 0.68, "hc-middle-y": 0.47, "hc-key": "af", "hc-a2": "AF", "abbrev-a3": "AFR", "iso-a2": "AF", "name": "Africa" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": "AS", "hc-group": "admin0", "hc-middle-x": 0.42, "hc-middle-y": 0.46, "hc-key": "as", "hc-a2": "AS", "abbrev-a3": "ASA", "iso-a2": "AS", "name": "Asia" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": "NA", "hc-group": "admin0", "hc-middle-x": 0.41, "hc-middle-y": 0.52, "hc-key": "na", "hc-a2": "NA", "abbrev-a3": "NAM", "iso-a2": "NA", "name": "North America" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": "SA", "hc-group": "admin0", "hc-middle-x": 0.61, "hc-middle-y": 0.36, "hc-key": "sa", "hc-a2": "SA", "abbrev-a3": "SAM", "iso-a2": "SA", "name": "South America" }, "geometry": null }
 ]
 }
