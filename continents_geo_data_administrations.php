@@ -34,7 +34,7 @@ function continents_geo_data_upgrade($nom_meta_base_version, $version_cible) {
 
 	$maj = array();
 
-	$maj['create'] = array(
+	/*$maj['create'] = array(
 		// cr´e la table
 		array(
 			'sql_alter',
@@ -62,7 +62,7 @@ function continents_geo_data_upgrade($nom_meta_base_version, $version_cible) {
 			'sql_alter',
 			'TABLE spip_continents ADD SPATIAL INDEX (geo)'
 		)
-	);
+	);*/
 
 	maj_plugin($nom_meta_base_version, $version_cible, $maj);
 }
