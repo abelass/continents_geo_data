@@ -2,7 +2,7 @@
 	prefix="continents_geo_data"
 	categorie="divers"
 	version="1.0.0"
-	etat="dev"
+	etat="test"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="prive/themes/spip/images/continents_geo_data-64.png"
 	documentation="https://github.com/abelass/continents_geo_data"
