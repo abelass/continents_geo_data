@@ -1,7 +1,7 @@
 <paquet
 	prefix="continents_geo_data"
 	categorie="divers"
-	version="1.0.0"
+	version="1.0.1"
 	etat="test"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="prive/themes/spip/images/continents_geo_data-64.png"
