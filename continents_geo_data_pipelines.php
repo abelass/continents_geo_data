@@ -20,9 +20,9 @@ if (!defined('_ECRIRE_INC_VERSION')) {
  * @param $boucle
  * @return mixed
  */
-function continents_geo_data_pre_boucle($boucle) {
+/*function continents_geo_data_pre_boucle($boucle) {
 	if ($boucle->type_requete == 'continents' or in_array('continents', $boucle->jointures)) {
 		$boucle->select[]= 'AsText(continents.geo) AS geometry_continent';
 	}
 	return $boucle;
-}
+}*/
